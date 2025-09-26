@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: "SUSE Mono", sans-serif;
+  font-weight: bold;
+}
+
+.heading{
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.lable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.checkboxes {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.lable input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0276ff;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.lable input[type="checkbox"]:checked {
+  background: #0276ff;
+}
+
+.lable input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  font-size: 14px;
+  color: white;
+}
+/*-------------------Password Container----------------------*/
+
+.passCont {
+  height: 3rem;
+  background-color: #d3d3d34e;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin: 5px auto;
+  width: 100%;
+  max-width: 60rem;
+  height: 3rem;
+  padding-left: 10px;
+  font-size: large;
+  text-align: center;
+}
+
+/*-----------------------customize container-----------------*/
+
+.customize {
+  background-color: #ffffff28;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-radius: 20px;
+  gap: 2rem;
+  width: 100%;
+  max-width: 60rem;
+  border: 1px solid #fff;
+}
+
+/*---------------------Button CSS----------------------*/
+
+.btn {
+  background: linear-gradient(to bottom right, #0276ff, #52a3ff);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 5px;
+  width: 95px;
+}
+
+.btn:not([disabled]):active {
+  box-shadow: 0 0 0.25rem #00000080, -0.125rem -0.125rem 1rem #52a3ff,
+    0.125rem 0.125rem 1rem #0276ff;
+}
+
+.btn:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem #00000080, -0.125rem -0.125rem 1rem #52a3ff,
+    0.125rem 0.125rem 1rem #0276ff;
+}
+
+.btn2 {
+  background: linear-gradient(to bottom right, #0276ff, #52a3ff);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 5px;
+  width: 250px;
+}
+
+.btn2:not([disabled]):active {
+  box-shadow: 0 0 0.25rem #00000080, -0.125rem -0.125rem 1rem #52a3ff,
+    0.125rem 0.125rem 1rem #0276ff;
+}
+
+.btn2:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem #00000080, -0.125rem -0.125rem 1rem #52a3ff,
+    0.125rem 0.125rem 1rem #0276ff;
+}
+
+.savebtn {
+  margin: 2px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0276ff,
+      0 0 40px #0276ff, 0 0 50px #0276ff, 0 0 60px #0276ff, 0 0 70px #0276ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2e90ff, 0 0 40px #2e90ff,
+      0 0 50px #2e90ff, 0 0 60px #2e90ff, 0 0 70px #2e90ff, 0 0 80px #2e90ff;
+  }
+}
+/*---------------------Slider CSS----------------------*/
+
+.slider {
+  -webkit-appearance: none;
+  height: 10px;
+  background: #d3d3d3;
+  border-radius: 30px;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #1cb0f6;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  background: #1cb0f6;
+  cursor: pointer;
+}
