@@ -68,6 +68,9 @@
   padding-left: 10px;
   font-size: large;
   text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 /*-----------------------customize container-----------------*/
