@@ -24,4 +24,4 @@ A fast and simple password generator built with React and Vite.
   
 # Live Demo
 
-[passwordgenerator0.pages.dev](https://passwordgenerator0.pages.dev/)
+[DEMO](https://passwordgenerator0.pages.dev/)
